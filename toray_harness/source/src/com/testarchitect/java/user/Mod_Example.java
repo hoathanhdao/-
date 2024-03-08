@@ -23,6 +23,7 @@ public class Mod_Example extends Utils {
         AbtLibrary.setActionScript("get current timestamp", module, 1);
         AbtLibrary.setActionScript("get first data of csv file", module, 1);
         AbtLibrary.setActionScript("delete first data of csv file", module, 1);
+        AbtLibrary.setActionScript("test write excel", module, 1);
 
     }
 
@@ -40,6 +41,8 @@ public class Mod_Example extends Utils {
             action_getFirstDataOfCSV();
         } else if (actionName.equals("delete first data of csv file")) {
             action_deleteFirstDataOfCSV();
+        } else if (actionName.equals("test write excel")) {
+            action_writeExcel();
         } else {
             result = false;
             AbtLibrary.reportError("Don't know action {" + actionName + "}");
@@ -77,13 +80,25 @@ public class Mod_Example extends Utils {
         }
     }
 
+    public static void action_writeExcel() {
+        String filePath = AbtLibrary.getArgByIndex(1);
+        String writeValue = AbtLibrary.getArgByIndex(2);
+        String rowIndex = AbtLibrary.getArgByIndex(3);
+        String columnIndex = AbtLibrary.getArgByIndex(4);
+        try {
+            ExcelUtil.writeValueToCell(filePath, writeValue, Integer.parseInt(rowIndex), Integer.parseInt(columnIndex));
+        } catch (Exception e){
+            AbtLibrary.report(e.getMessage());
+        }
+    }
+
     public static void main(String[] args) throws TesseractException, IOException {
         //String cell = CSVUtils.readCSV("C:\\Work\\NTTR\\mail_list.csv", 0);
         //System.out.println(cell);
 
-        //ExcelUtil.getCellValue("C:\\Work\\東レ\\Test.xlsx");
+        ExcelUtil.writeValueToCell("C:\\Work\\東レ\\Test.xlsx", "9999", 0, 0);
 
-        ExcelUtil.getCellIndexByCellValue("C:\\Work\\東レ\\Test.xlsx","注文番号");
+        //ExcelUtil.getCellIndexByCellValue("C:\\Work\\東レ\\Test.xlsx","注文番号");
 
         //CSVUtils.deleteRow("C:\\Work\\NTTR\\mail_list.csv", "nttrt-at-shop-sp001@submail.agest.co.jp");
     }

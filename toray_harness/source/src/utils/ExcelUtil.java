@@ -91,4 +91,47 @@ public class ExcelUtil {
             //AbtLibrary.report(e.getMessage());
         }
     }
+
+    public static void writeValueToCell(String filePath, String value, int columnIndex, int rowIndex) {
+        try (FileInputStream fileInputStream = new FileInputStream(filePath);
+             Workbook workbook = WorkbookFactory.create(fileInputStream)) {
+
+            Sheet sheet = workbook.getSheetAt(0); // Get the first sheet (index 0)
+            int rowtmp = 0;
+
+
+            // Iterate through all the rows in the sheet
+            for (Row row : sheet) {
+                // Iterate through all the cells in the row
+                if (rowtmp > rowIndex) {
+                    int coltmp = 0;
+                    for (Cell cell : row) {
+                        if (coltmp > columnIndex) {
+                            CellStyle cellStyle = cell.getCellStyle();
+                            Color color = cellStyle.getFillForegroundColorColor();
+
+                            // Check if the cell has a background color
+                            if (color != null) {
+                                System.out.println("Cell " + cell.getStringCellValue() + " has background color: " + color.toString());
+                            } else {
+                                cell.setCellValue(value);
+                            }
+                        }
+                        coltmp++;
+                    }
+                }
+                rowtmp++;
+            }
+
+            // write to excel file
+
+            FileOutputStream out = new FileOutputStream(filePath);
+            workbook.write(out);
+            out.close();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+            //AbtLibrary.report(e.getMessage());
+        }
+    }
 }
