@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="EclipseModuleManager">
+    <libelement value="jar://$MODULE_DIR$/executables/java_harness.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/source/lib/commons-codec-1.15.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/source/lib/commons-collections4-4.4.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/source/lib/commons-compress-1.20.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/source/lib/commons-io-2.4.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/source/lib/commons-math3-3.6.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/source/lib/curvesapi-1.06.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/source/lib/javaharnesslib.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/source/lib/pdfbox-app-2.0.23.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/source/lib/poi-5.0.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/source/lib/poi-examples-5.0.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/source/lib/poi-excelant-5.0.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/source/lib/poi-integration-5.0.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/source/lib/poi-ooxml-5.0.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/source/lib/poi-ooxml-full-5.0.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/source/lib/poi-ooxml-lite-5.0.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/source/lib/poi-scratchpad-5.0.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/source/lib/SparseBitSet-1.2.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/source/lib/xmlbeans-4.0.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/source/lib/opencsv-5.5.2.jar!/" />
+    <src_description expected_position="1">
+      <src_folder value="file://$MODULE_DIR$/source/src" expected_position="1" />
+    </src_description>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/bin" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/source/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="java_harness.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/executables/java_harness.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-codec-1.15.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/source/lib/commons-codec-1.15.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-collections4-4.4.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/source/lib/commons-collections4-4.4.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-compress-1.20.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/source/lib/commons-compress-1.20.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-io-2.4.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/source/lib/commons-io-2.4.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-math3-3.6.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/source/lib/commons-math3-3.6.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="curvesapi-1.06.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/source/lib/curvesapi-1.06.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="javaharnesslib.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/source/lib/javaharnesslib.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="pdfbox-app-2.0.23.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/source/lib/pdfbox-app-2.0.23.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="poi-5.0.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/source/lib/poi-5.0.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="poi-examples-5.0.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/source/lib/poi-examples-5.0.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="poi-excelant-5.0.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/source/lib/poi-excelant-5.0.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="poi-integration-5.0.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/source/lib/poi-integration-5.0.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="poi-ooxml-5.0.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/source/lib/poi-ooxml-5.0.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="poi-ooxml-full-5.0.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/source/lib/poi-ooxml-full-5.0.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="poi-ooxml-lite-5.0.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/source/lib/poi-ooxml-lite-5.0.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="poi-scratchpad-5.0.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/source/lib/poi-scratchpad-5.0.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="SparseBitSet-1.2.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/source/lib/SparseBitSet-1.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="xmlbeans-4.0.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/source/lib/xmlbeans-4.0.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="opencsv-5.5.2.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/source/lib/opencsv-5.5.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="tess4j-5.8.0" level="project" />
+    <orderEntry type="library" name="jna-5.13.0" level="project" />
+    <orderEntry type="library" name="lept4j-1.18.1" level="project" />
+    <orderEntry type="library" name="slf4j-api-2.0.7" level="project" />
+    <orderEntry type="library" name="lib" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/source/lib/opencv-4.9.0-0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+  </component>
+</module>
