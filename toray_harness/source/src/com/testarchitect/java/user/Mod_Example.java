@@ -25,6 +25,7 @@ public class Mod_Example extends Utils {
         AbtLibrary.setActionScript("delete first data of csv file", module, 1);
         AbtLibrary.setActionScript("test write excel", module, 1);
         AbtLibrary.setActionScript("remove space", module, 1);
+        AbtLibrary.setActionScript("convert full-size to half-size", module, 1);
 
     }
 
@@ -46,6 +47,8 @@ public class Mod_Example extends Utils {
             action_writeExcel();
         } else if (actionName.equals("remove space")) {
             action_removeSpaceFromStrings();
+        } else if (actionName.equals("convert full-size to half-size")) {
+            action_convertFullsizeToHalfsize();
         } else {
             result = false;
             AbtLibrary.reportError("Don't know action {" + actionName + "}");
@@ -107,11 +110,22 @@ public class Mod_Example extends Utils {
 
     }
 
+    public static void action_convertFullsizeToHalfsize(){
+        String target = AbtLibrary.getArgByIndex(1);
+        String result = AbtLibrary.getArgByIndex(2);
+        try {
+            String halfStr = StringUtils.fullWidthToHalfWidth(target);
+            AbtLibrary.assign(result, halfStr);
+        } catch (Exception e){
+            AbtLibrary.report(e.getMessage());
+        }
+    }
+
     public static void main(String[] args) throws TesseractException, IOException {
         //String cell = CSVUtils.readCSV("C:\\Work\\NTTR\\mail_list.csv", 0);
         //System.out.println(cell);
 
-        System.out.println(StringUtils.removeSpaceFromString("Hello   Wor lll"));
+        System.out.println(StringUtils.fullWidthToHalfWidth("％"));
 
         //ExcelUtil.getCellIndexByCellValue("C:\\Work\\東レ\\Test.xlsx","注文番号");
 
