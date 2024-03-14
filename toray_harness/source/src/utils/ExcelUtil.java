@@ -163,11 +163,11 @@ public class ExcelUtil {
         return 0;
     }
 
-    public static void writeValueToCellsWithoutBackgroundColor(String filePath, String value, int columnIndex, int rowIndex) {
+    public static void writeValueToCellsWithoutBackgroundColor(String filePath, String sheetname, String value, int columnIndex, int rowIndex) {
         try (FileInputStream fileInputStream = new FileInputStream(filePath);
              Workbook workbook = WorkbookFactory.create(fileInputStream)) {
 
-            Sheet sheet = workbook.getSheetAt(0); // Get the first sheet (index 0)
+            Sheet sheet = getSheet(filePath, sheetname);
             int rowtmp = 0;
 
 

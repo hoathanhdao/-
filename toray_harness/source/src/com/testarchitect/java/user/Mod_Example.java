@@ -98,11 +98,12 @@ public class Mod_Example extends Utils {
 
     public static void action_writeValueToExcelCellsWithoutBackgroundColor() {
         String filePath = AbtLibrary.getArgByIndex(1);
-        String writeValue = AbtLibrary.getArgByIndex(2);
-        String rowIndexStart = AbtLibrary.getArgByIndex(3);
-        String columnIndexStart = AbtLibrary.getArgByIndex(4);
+        String sheetName = AbtLibrary.getArgByIndex(2);
+        String writeValue = AbtLibrary.getArgByIndex(3);
+        String rowIndexStart = AbtLibrary.getArgByIndex(4);
+        String columnIndexStart = AbtLibrary.getArgByIndex(5);
         try {
-            ExcelUtil.writeValueToCellsWithoutBackgroundColor(filePath, writeValue, Integer.parseInt(rowIndexStart), Integer.parseInt(columnIndexStart));
+            ExcelUtil.writeValueToCellsWithoutBackgroundColor(filePath, sheetName, writeValue, Integer.parseInt(rowIndexStart), Integer.parseInt(columnIndexStart));
         } catch (Exception e) {
             AbtLibrary.report(e.getMessage());
         }
@@ -146,7 +147,7 @@ public class Mod_Example extends Utils {
     }
 
 
-    public static  void action_getCellIndexByValue(){
+    public static void action_getCellIndexByValue() {
         String filePath = AbtLibrary.getArgByIndex(1);
         String sheetName = AbtLibrary.getArgByIndex(2);
         String value = AbtLibrary.getArgByIndex(3);
@@ -163,7 +164,7 @@ public class Mod_Example extends Utils {
         }
     }
 
-    public static void action_changeDataOfUploadFile(){
+    public static void action_changeDataOfUploadFile() {
         String filePath = AbtLibrary.getArgByIndex(1);
         String sheetName = AbtLibrary.getArgByIndex(2);
         String startCellValue = AbtLibrary.getArgByIndex(3);
@@ -172,7 +173,7 @@ public class Mod_Example extends Utils {
             Sheet sheet = ExcelUtil.getSheet(filePath, sheetName);
             int rowIndex = ExcelUtil.findIndex(sheet, startCellValue, false);
             int columnIndex = ExcelUtil.findIndex(sheet, startCellValue, true);
-            ExcelUtil.writeValueToCellsWithoutBackgroundColor(filePath, dataChange, columnIndex, rowIndex);
+            ExcelUtil.writeValueToCellsWithoutBackgroundColor(filePath, sheetName, dataChange, columnIndex, rowIndex);
         } catch (Exception e) {
             AbtLibrary.report(e.getMessage());
         }
