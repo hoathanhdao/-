@@ -14,6 +14,13 @@ public class StringUtils {
 
     }
 
+    public static String removeWhiteSpace(String value) {
+        while (Character.isWhitespace(value.charAt(0))) {
+            value = value.substring(1);
+        }
+        return value;
+    }
+
     public static String fullWidthToHalfWidth(String fullWidthString) {
         char[] charArray = fullWidthString.toCharArray();
         for (int i = 0; i < charArray.length; i++) {
